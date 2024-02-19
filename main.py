@@ -1,7 +1,6 @@
 import os
 # Script to create a new folder with ts,js,cs,py for each algo  
 
-
 def create_files(folder_name):
     # Create folder if it doesn't exist
     if not os.path.exists(folder_name):
