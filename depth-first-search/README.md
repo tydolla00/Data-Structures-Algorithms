@@ -1,7 +1,8 @@
-# **Adjacency List**
+
+# **depth-first-search**
 Description:
 
-# Applications/When to use a Adjacency List
+# Applications/When to use a depth-first-search
 - *item*: description
 - 
 

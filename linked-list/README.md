@@ -1,7 +1,7 @@
-# **Adjacency List**
+# **Linked-List**
 Description:
 
-# Applications/When to use a Adjacency List
+# Applications/When to use a Linked List
 - *item*: description
 - 
 

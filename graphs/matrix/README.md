@@ -1,7 +1,7 @@
-# **Adjacency List**
+# **Matrix**
 Description:
 
-# Applications/When to use a Adjacency List
+# Applications/When to use a Matrix
 - *item*: description
 - 
 

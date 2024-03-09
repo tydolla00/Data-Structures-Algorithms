@@ -1,7 +1,7 @@
-# **Adjacency List**
+# **Binary Search**
 Description:
 
-# Applications/When to use a Adjacency List
+# Applications/When to use a Binary Search
 - *item*: description
 - 
 

@@ -1,7 +1,9 @@
-# **Adjacency List**
+
+# **trie**
+
 Description:
 
-# Applications/When to use a Adjacency List
+# Applications/When to use a trie
 - *item*: description
 - 
 
@@ -19,4 +21,4 @@ Description:
 - **Java**: ✅ ❌
 - **Python**: ✅ ❌
 - **TS**: ✅ ❌
-            
+        

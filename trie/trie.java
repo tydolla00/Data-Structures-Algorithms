@@ -1,0 +1,1 @@
+# This is a js file for trie

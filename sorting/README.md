@@ -1,7 +1,7 @@
-# **Adjacency List**
+# **Sorting Algorithms**
 Description:
 
-# Applications/When to use a Adjacency List
+# Applications/When to use a Sorting Algorithm
 - *item*: description
 - 
 

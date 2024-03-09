@@ -1,7 +1,8 @@
-# **Adjacency List**
+
+# **dp**
 Description:
 
-# Applications/When to use a Adjacency List
+# Applications/When to use a dp
 - *item*: description
 - 
 

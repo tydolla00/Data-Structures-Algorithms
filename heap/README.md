@@ -1,7 +1,8 @@
-# **Adjacency List**
+
+# **heap**
 Description:
 
-# Applications/When to use a Adjacency List
+# Applications/When to use a heap
 - *item*: description
 - 
 
