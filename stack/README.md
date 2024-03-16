@@ -12,10 +12,12 @@ So how does it work? Think of a stack as a collection (stack) of plates. When yo
 
 ### Push
 Each item is pushed onto the top allowing for ease of access and fast retrieval. Pushing item 2 after item 1, results in item 2 being in front of item 1 in the order of retrieval on the stack.
+
 <img width="859" alt="image" src="https://github.com/tydolla00/Data-Structures-Algorithms/assets/90355178/cd27b5d0-a3d4-4a0b-8344-5dc9f9787661">
 
 ### Pop
 The top of the stack is removed and items in the stack are shifted towards the top. 
+
 <img width="709" alt="image" src="https://github.com/tydolla00/Data-Structures-Algorithms/assets/90355178/94504194-31fd-45fa-9d47-f90e8dea6f60">
 
 
@@ -33,7 +35,6 @@ Stacks are useful when you don't care about accessing a random element and want 
 # Disadvantages
 - *Limited Access*: Can only retrieve last pushed item.
 
-#### Think of how you can implement a stack in your own workflow. Check out an implementation in [Typescript](stack.ts) [Java](stack.java) [C#](stack.cs) [Python](stack.py)
 
 # Support
 ### Built in ✅ | Not Built In ❌
@@ -43,5 +44,5 @@ Stacks are useful when you don't care about accessing a random element and want 
 - **TS**: ❌
 
 # Resources
+#### Think of how you can implement a stack in your own workflow. Check out an implementation in [Typescript](stack.ts) [Java](stack.java) [C#](stack.cs) [Python](stack.py)
 [Geek for Geeks Stack](https://www.geeksforgeeks.org/stack-data-structure/?ref=lbp)
-        

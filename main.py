@@ -11,10 +11,14 @@ def create_files(folder_name):
     # Create folder if it doesn't exist
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
+        folder_name = folder_name.capitalize()
 
         # Create files with folder name
         file_extensions = ['ts', 'java', 'py', 'cs']
+        implementations = ""
         for ext in file_extensions:
+            lang = ext.capitalize()
+            implementations += f"[{lang}]({folder_name}.{ext}) " # Build implementations string linking file implementations
             file_name = os.path.join(folder_name, f"{folder_name}.{ext}")
             with open(file_name, 'w') as f:
                 f.write(f"# This is a {ext} file for {folder_name}")
@@ -44,6 +48,9 @@ Description:
 - **Java**: ✅ ❌
 - **Python**: ✅ ❌
 - **TS**: ✅ ❌
+
+# Resources
+- Implementations in {implementations}
             """
             file.write(template)
     else:
