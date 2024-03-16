@@ -7,7 +7,7 @@ def create_files(folder_name):
         os.makedirs(folder_name)
 
     # Create files with folder name
-    file_extensions = ['ts', 'js', 'py', 'cs']
+    file_extensions = ['ts', 'java', 'py', 'cs']
     for ext in file_extensions:
         file_name = os.path.join(folder_name, f"{folder_name}.{ext}")
         with open(file_name, 'w') as f:
