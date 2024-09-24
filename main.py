@@ -1,6 +1,7 @@
 import os
 # Script to create a new folder with ts,js,cs,py for each DS/algo  
 # Will not create if folder already exists
+# TODO
 # Allow user to input custom file extensions. 
     # Have default list of extensions and then ask if 
     # they want to add more, and then give the ability to 

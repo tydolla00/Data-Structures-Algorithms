@@ -1,4 +1,4 @@
-class SignlyLinkedList<T extends number> {
+class SinglyLinkedList<T> {
   head: LinkedListNode<T>;
   tail: LinkedListNode<T>;
   constructor() {
@@ -29,8 +29,8 @@ class SignlyLinkedList<T extends number> {
       console.log("NaN, please pass in a Node.");
       return;
     }
-    if (this.head == node) {
-      if (node.next == this.tail) {
+    if (this.head === node) {
+      if (node.next === this.tail) {
         console.log("Cannot delete Head or Tail without other nodes.");
         return;
       }
@@ -39,8 +39,8 @@ class SignlyLinkedList<T extends number> {
 
     let prevNode = this.head;
     while (prevNode.next != node && prevNode.next) prevNode = prevNode.next;
-    if (prevNode.next == node) {
-      if (node == this.tail) {
+    if (prevNode.next === node) {
+      if (node === this.tail) {
         this.tail = prevNode;
       }
       prevNode.next = node.next;
@@ -51,7 +51,13 @@ class SignlyLinkedList<T extends number> {
     let node = this.head;
     let stringBuilder = "";
     while (node) {
-      stringBuilder += `Node [${node.val}] -> `;
+      const desc =
+        node === this.head || node === this.tail
+          ? node === this.head
+            ? "Head"
+            : "Tail"
+          : "Node";
+      stringBuilder += `${desc} [${node.val}] -> `;
       node = <LinkedListNode<T>>node.next;
     }
     stringBuilder += "None";
@@ -61,28 +67,28 @@ class SignlyLinkedList<T extends number> {
   search(val: T) {
     let node = this.head;
     while (node.val !== val && node.next) node = node.next;
-    node.val == val ? true : false;
+    node.val === val ? true : false;
   }
 }
 
-// class LinkedListNode<T extends number> {
-//   next: LinkedListNode<T> | undefined = undefined;
-//   constructor(public val?: T) {
-//     this.val = val ? val : (0 as T);
-//   }
-// }
+class LinkedListNode<T> {
+  next: LinkedListNode<T> | undefined = undefined;
+  constructor(public val?: T) {
+    this.val = val;
+  }
+}
 
-// const linkedList = new SignlyLinkedList<number>();
-// linkedList.printList();
-// linkedList.insert(linkedList.head, new LinkedListNode<number>(1));
-// linkedList.insertAtHead(new LinkedListNode<number>(69));
-// linkedList.printList(); // 69 -> 0 -> 1 -> 0
-// linkedList.delete(linkedList.head.next?.next);
-// linkedList.printList(); // 69 -> 0 -> 0 -> None
-// linkedList.delete(linkedList.tail);
-// linkedList.printList(); // 69 -> 0 -> None
-// linkedList.delete(linkedList.head); // Error
-// linkedList.printList();
-// linkedList.insert(linkedList.head, new LinkedListNode<number>(100));
-// linkedList.delete(linkedList.head);
-// linkedList.printList(); // 100 -> 0 -> None
+const linkedList = new SinglyLinkedList<number>();
+linkedList.printList();
+linkedList.insert(linkedList.head, new LinkedListNode<number>(1));
+linkedList.insertAtHead(new LinkedListNode<number>(69));
+linkedList.printList(); // 69 -> 0 -> 1 -> 0
+linkedList.delete(linkedList.head.next?.next);
+linkedList.printList(); // 69 -> 0 -> 0 -> None
+linkedList.delete(linkedList.tail);
+linkedList.printList(); // 69 -> 0 -> None
+linkedList.delete(linkedList.head); // Error
+linkedList.printList();
+linkedList.insert(linkedList.head, new LinkedListNode<number>(100));
+linkedList.delete(linkedList.head);
+linkedList.printList(); // 100 -> 0 -> None
